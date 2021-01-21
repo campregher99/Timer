@@ -1,77 +1,77 @@
 #include "Timer.h"
 
-bool setTimeMicros(unsigned long long int _time)
+bool Timer::setTimeMicros(unsigned long long int _time)
 {
 	time = _time;
 	return true;
 }
 
-bool setTimeMillis(unsigned long long int _time)
+bool Timer::setTimeMillis(unsigned long long int _time)
 {
 	time = _time * 1000;
 	return true;
 }
 
-bool setTimeSecond(unsigned long long int _time)
+bool Timer::setTimeSecond(unsigned long long int _time)
 {
 	time = _time * 1000000;
 	return true;
 }
 
-bool setTimeMinute(unsigned long long int _time)
+bool Timer::setTimeMinute(unsigned long long int _time)
 {
 	time = _time * 60000000;
 	return true;
 }
 
-bool setTimeHour(unsigned long long int _time)
+bool Timer::setTimeHour(unsigned long long int _time)
 {
 	time = _time * 3600000000;
 	return true;
 }
 
-bool setTimeDay(unsigned long int _time)
+bool Timer::setTimeDay(unsigned long int _time)
 {
 	time = (unsigned long long int) _time * 86400000000;
 	return true;
 }
 
-bool setTimeWeek(unsigned long int _time)
+bool Timer::setTimeWeek(unsigned long int _time)
 {
 	time = (unsigned long long int) _time * 604800000000;
 }
 
-unsigned long long int getTimeMicros() const
+unsigned long long int Timer::getTimeMicros() const
 {
 	return time;
 }
 
-unsigned long long int getTimeMillis() const
+unsigned long long int Timer::getTimeMillis() const
 {
 	return time / 1000.0;
 }
 
-unsigned long long int getTimeSecond() const
+unsigned long long int Timer::getTimeSecond() const
 {
 	return time / 1000000.0;
 }
 
-unsigned long long int getTimeMinute() const
+unsigned long long int Timer::getTimeMinute() const
 {
 	return time / 60000000.0;
 }
 
-unsigned long long int getTimeHour() const
+unsigned long long int Timer::getTimeHour() const
 {
 	return time / 3600000000.0;
 }
 
-unsigned long int getTimeDay() const
+unsigned long int Timer::getTimeDay() const
 {
 	return time / 86400000000.0;
 }
 
-unsigned long int getTimeWeek() const
+unsigned long int Timer::getTimeWeek() const
 {
 	return time / 604800000000.0; 
 }

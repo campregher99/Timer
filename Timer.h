@@ -11,7 +11,7 @@ public:
 	~Timer() = default;
 
 	virtual bool isPassed();
-	virtual startCount();
+	virtual bool startCount();
 	
 	bool setTimeMicros(unsigned long long int _time);
 	bool setTimeMillis(unsigned long long int _time);
